@@ -1,2 +1,0 @@
-A variable is a storage location paired with an identifier, containing a value.
-
