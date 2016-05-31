@@ -65,18 +65,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="instanceof.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Fundamentals/Primitives/instanceof.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
@@ -145,11 +133,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="delete.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fundamentals/ControlFlow/delete.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35185185">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="58" selection-end-column="5" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strictmode.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Fundamentals/ControlFlow/strictmode.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4814815">
+              <caret line="48" column="69" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -186,6 +186,7 @@
         <option value="$PROJECT_DIR$/Fundamentals/ControlFlow/exceptions.js" />
         <option value="$PROJECT_DIR$/Fundamentals/ControlFlow/forin.js" />
         <option value="$PROJECT_DIR$/Fundamentals/ControlFlow/delete.js" />
+        <option value="$PROJECT_DIR$/Fundamentals/ControlFlow/strictmode.js" />
       </list>
     </option>
   </component>
@@ -545,6 +546,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -617,6 +621,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -784,8 +791,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Fundamentals/ControlFlow/delete.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35185185">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fundamentals/ControlFlow/strictmode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4814815">
+          <caret line="48" column="69" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
