@@ -65,18 +65,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="null.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Fundamentals/Primitives/null.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="instanceof.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fundamentals/Primitives/instanceof.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -145,11 +133,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forin.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fundamentals/ControlFlow/forin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6481481">
+            <state vertical-scroll-proportion="0.0">
               <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Fundamentals/ControlFlow/delete.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35185185">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -185,6 +185,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Fundamentals/ControlFlow/exceptions.js" />
         <option value="$PROJECT_DIR$/Fundamentals/ControlFlow/forin.js" />
+        <option value="$PROJECT_DIR$/Fundamentals/ControlFlow/delete.js" />
       </list>
     </option>
   </component>
@@ -773,8 +774,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Fundamentals/ControlFlow/forin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6481481">
+        <state vertical-scroll-proportion="0.0">
           <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fundamentals/ControlFlow/delete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35185185">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
