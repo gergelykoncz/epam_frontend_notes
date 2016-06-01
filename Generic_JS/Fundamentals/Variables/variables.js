@@ -28,3 +28,28 @@ var hoistedGlobal = 'hello';
 	console.log(hoistedGlobal); //'world'
 })();
 
+/* Objects are passed by reference */
+(function objectsPassedByReference() {
+	var obj = {}; //an empty object
+
+	function modifyParam(param) {
+		param.value = 22;
+	}
+
+	modifyParam(obj);
+
+	console.log(obj.value); //22, since obj was passed by reference
+})();
+
+/* Primitives are passed by value */
+(function primitivesPassedByValue() {
+	var primitive = 22;
+
+	function modifyPrimitive(param) {
+		param += 100;
+	}
+
+	modifyPrimitive(primitive);
+
+	console.log(primitive); //22
+})();
