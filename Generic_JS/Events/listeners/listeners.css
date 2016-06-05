@@ -1,0 +1,6 @@
+#console {
+    position: fixed;
+    bottom: 10px;
+    height: 200px;
+    width: inherit;
+}

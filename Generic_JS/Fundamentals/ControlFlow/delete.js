@@ -33,7 +33,7 @@
 	var x = {};
 	Object.defineProperty(x, 'hello', {
 		value: 'world',
-		writable: false
+		configurable: false
 	});
 
 	console.log(x.hello); //world
@@ -50,7 +50,7 @@
 	var x = {};
 	Object.defineProperty(x, 'hello', {
 		value: 'world',
-		writable: false
+		configurable: false
 	});
 
 	console.log(x.hello); //world

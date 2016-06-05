@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event listener examples</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="listeners.css">
+</head>
+<body>
+<div class="container">
+    <h1>Event listener examples</h1>
+    <p>There are three different ways to attach event listeners to DOM elements.</p>
+
+    <hr>
+
+    <h3>Using HTML attributes</h3>
+    <xmp>
+        <button onclick="clickFunction"></button>
+    </xmp>
+    <button onclick="clickFunction('html binding')">Click Me!</button>
+
+    <textarea id="console"></textarea>
+    <hr>
+
+    <h3>Using DOM object properties</h3>
+    <pre>
+        document.getElementById('domObject').onclick = clickFunction.bind(this, 'DomObject');
+    </pre>
+    <button id="domObject">Click Me!</button>
+    <hr>
+
+    <h3>Using the addEventListener function</h3>
+    <pre>
+        document.getElementById('evListener').addEventListener('click', clickFunction.bind(this, 'EvListener'));
+    </pre>
+    <button id="evListener">Click Me!</button>
+</div>
+
+<script type="text/javascript" src="listeners.js"></script>
+</body>
+</html>

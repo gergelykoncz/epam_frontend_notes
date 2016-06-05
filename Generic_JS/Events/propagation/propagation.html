@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event propagation examples</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="propagation.css">
+</head>
+<body>
+<div class="container">
+    <h1>Event propagation examples</h1>
+    <form id="bubblingForm">
+        <fieldset>
+            <legend>Bubbling Form</legend>
+            <p>If an event is using the bubbling model, then it will be processed by the innermost event handler first,
+                then
+                travels upwards.</p>
+            <input type="submit" value="Submit" id="bubblingSubmit">
+        </fieldset>
+    </form>
+    <hr>
+
+    <form id="capturingForm">
+        <fieldset>
+            <legend>Capturing Form</legend>
+            <p>If an event is using the capturing model, then it will be processed by the outermost event handler first,
+                then travels downwards.</p>
+            <input type="submit" value="Submit" id="capturingSubmit">
+        </fieldset>
+    </form>
+
+    <textarea id="console"></textarea>
+
+</div>
+
+<script type="text/javascript" src="propagation.js"></script>
+</body>
+</html>
