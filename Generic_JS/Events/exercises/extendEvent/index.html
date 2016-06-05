@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extend an event</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Extend an event</h1>
+    <p>Lots of browser events extend UIEvent.</p>
+    <p>Do the same and add a method returns the following as a formatted string:</p>
+    <ul>
+        <li>Whether or not the event is built-in.</li>
+        <li>The event target's name (or id)</li>
+        <li>The event's type</li>
+        <li>The method name should be <code>logData</code></li>
+    </ul>
+    <p>You can test your work by clicking on the above button:</p>
+    <button type="button">Test with me!</button>
+
+</div>
+
+<script type="text/javascript">
+    ///Your code here
+
+    var button = document.getElementsByTagName('button')[0];
+    button.addEventListener('click', function (e) {
+        console.log(e.logData());
+    });
+</script>
+</body>
+</html>

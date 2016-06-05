@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global error handling</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Global error handling exercise</h1>
+    <p>This page throws an error on loading.</p>
+    <p>Your objective is to write a nice, relaxing message to the console, without using the
+        <code>try/catch/finally</code>
+        construct.</p>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        throw new Error('Catch me if you can!');
+    };
+</script>
+</body>
+</html>

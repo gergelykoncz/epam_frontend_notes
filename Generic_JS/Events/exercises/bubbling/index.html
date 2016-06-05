@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event bubbling</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Event bubbling</h1>
+    <p>Optimize the event handler code on this page!</p>
+    <p><em>Hint:</em> the best solution has only one event handler defined, and only when event handler attached!</p>
+
+    <h3>Options:</h3>
+    <ul>
+        <li><a href="#" data-message="hello" onclick="writeMessage1(event)">Option 1</a></li>
+        <li><a href="#" data-message="world" onclick="writeMessage2(event)">Option 2</a></li>
+        <li><a href="#" data-message="such" onclick="writeMessage3(event)">Option 3</a></li>
+        <li><a href="#" data-message="a" onclick="writeMessage4(event)">Option 4</a></li>
+        <li><a href="#" data-message="splendid" onclick="writeMessage5(event)">Option 5</a></li>
+        <li><a href="#" data-message="day" onclick="writeMessage6(event)">Option 6</a></li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    function writeMessage1(e) {
+        console.log(e.target.dataset.message);
+        return false;
+    }
+
+    function writeMessage2(e) {
+        console.log(e.target.dataset.message);
+        return false;
+    }
+
+    function writeMessage3(e) {
+        console.log(e.target.dataset.message);
+        return false;
+    }
+
+    function writeMessage4(e) {
+        console.log(e.target.dataset.message);
+        return false;
+    }
+
+    function writeMessage5(e) {
+        console.log(e.target.dataset.message);
+        return false;
+    }
+
+    function writeMessage6(e) {
+        console.log(e.target.dataset.message);
+        return false;
+    }
+</script>
+</body>
+</html>
