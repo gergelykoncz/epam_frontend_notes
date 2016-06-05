@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Synchronous events in JS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="synchronous.css">
 </head>
 <body>
-<h1>Synchronous events in JS</h1>
-<p>Most events are asynchronous in JS, but there are some exceptions you need to be aware of.</p>
+<div class="container">
+    <h1>Synchronous events in JS</h1>
+    <p>Most events are asynchronous in JS, but there are some exceptions you need to be aware of.</p>
+    <hr>
+    <h3>JS focus is synchronous</h3>
+    <input type="text" id="textInput" onfocus="inputfocus()">
+    <button onclick="buttonClicked()" id="domMutator">Mutate the DOM!</button>
 
+
+    <textarea id="console"></textarea>
+</div>
+<script type="text/javascript" src="synchronous.js"></script>
 </body>
 </html>
