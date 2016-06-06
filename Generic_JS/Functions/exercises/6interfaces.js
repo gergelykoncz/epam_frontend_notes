@@ -6,7 +6,9 @@
  */
 
 function multiplyBy(number) {
-
+	return function (item, index, array) {
+		array[index] = item * number;
+	}
 }
 
 var multiplyByTen = multiplyBy(10);

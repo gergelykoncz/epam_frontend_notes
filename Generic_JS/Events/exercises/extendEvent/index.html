@@ -23,6 +23,11 @@
 
 <script type="text/javascript">
     ///Your code here
+    UIEvent.prototype.logData = function () {
+        return 'Built-in: ' + this.isTrusted + '\n' +
+                'Target: ' + this.target + '\n' +
+                'Type: ' + this.type
+    };
 
     var button = document.getElementsByTagName('button')[0];
     button.addEventListener('click', function (e) {

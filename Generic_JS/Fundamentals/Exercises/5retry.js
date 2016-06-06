@@ -18,3 +18,19 @@ function crappyAdd(a, b) {
 		throw new RandomFailureError();
 	}
 }
+
+function coolAdd(a, b) {
+	while (true) {
+		try {
+			var result = crappyAdd(a, b);
+			return result;
+		}
+		catch (e) {
+			if (e instanceof RandomFailureError === false) {
+				throw e;
+			}
+		}
+	}
+}
+
+console.log(coolAdd(1, 1));

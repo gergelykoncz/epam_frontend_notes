@@ -5,6 +5,9 @@
  */
 
 function multiplyBy(number) {
+	return function(item){
+		item.x *= number;
+	}
 }
 
 var multiplyByTen = multiplyBy(10);

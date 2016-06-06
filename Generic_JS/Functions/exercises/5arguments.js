@@ -3,7 +3,7 @@
  */
 
 function listParameters() {
-	var argumentsAsArray = arguments;
+	var argumentsAsArray = Array.apply(null, arguments);
 
 	argumentsAsArray.forEach(function (item) {
 		console.log(item);

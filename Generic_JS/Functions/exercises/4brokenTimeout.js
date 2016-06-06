@@ -5,6 +5,7 @@ var remindMeBot = {
 	message: 'remind you!',
 	remindMeIn: function(seconds){
 		setTimeout(this.doRemind.call(), seconds * 1000);
+		//solution setTimeout(this.doRemind.bind(this), seconds * 1000);
 	},
 	doRemind: function(){
 		console.log('You asked me to:', this.message);

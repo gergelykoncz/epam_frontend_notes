@@ -9,9 +9,20 @@
  */
 
 function range(from, to) {
-
+	var result = [];
+	for (var i = from; i <= to; i++) {
+		result.push(i);
+	}
+	return result;
 }
 
 function sum(arr) {
-
+	var result = 0;
+	for (var i = 0; i < arr.length; i++) {
+		result += arr[i];
+	}
+	return result;
 }
+
+console.log(range(1, 3));
+console.log(sum(range(1, 3)));

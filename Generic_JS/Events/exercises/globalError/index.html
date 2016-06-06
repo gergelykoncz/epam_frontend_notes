@@ -18,6 +18,10 @@
     window.onload = function () {
         throw new Error('Catch me if you can!');
     };
+
+    window.addEventListener('error', function (e) {
+        e.preventDefault();
+    });
 </script>
 </body>
 </html>

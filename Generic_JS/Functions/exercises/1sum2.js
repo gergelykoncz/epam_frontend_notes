@@ -2,5 +2,9 @@
 /* The interface of Array.prototype.reduce is  => reduce(previousValue, currentValue, currentIndex, array)*/
 
 function sum(arr) {
-
+	return arr.reduce(function (prev, curr) {
+		return prev + curr;
+	});
 }
+
+console.log(sum([1,2,3]));
