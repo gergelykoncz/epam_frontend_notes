@@ -1,0 +1,23 @@
+{
+  "name": "epam-academy-task-runners-demo",
+  "description": "A simple webapp showcasing capabilities and the benefits of using task runners.",
+  "main": "index.js",
+  "authors": [
+    "Gergely Koncz"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "angular": "^1.5.6",
+    "bootstrap": "^3.3.6"
+  }
+}

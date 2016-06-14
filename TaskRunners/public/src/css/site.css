@@ -1,0 +1,8 @@
+.poke-table{
+    text-transform: capitalize;
+}
+
+.poke-table .moves{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
