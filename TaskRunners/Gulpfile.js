@@ -7,7 +7,8 @@ var gulp = require('gulp'),
 	gulpif = require('gulp-if'),
 	uglify = require('gulp-uglify'),
 	ngAnnotate = require('gulp-ng-annotate'),
-	watch = require('gulp-watch');
+	watch = require('gulp-watch'),
+	KarmaServer = require('karma').Server;
 
 gulp.task('start', function () {
 	nodemon({
@@ -33,6 +34,13 @@ gulp.task('useref', function () {
 		.pipe(gulpif('*.js', ngAnnotate()))
 		.pipe(gulpif('*.js', uglify()))
 		.pipe(gulp.dest('public/dist'));
+});
+
+gulp.task('karma', function (done) {
+	new KarmaServer({
+		configFile: __dirname + '/karma.conf.js',
+		singleRun: true
+	}, done).start();
 });
 
 gulp.task('watch', function () {
