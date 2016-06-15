@@ -28,7 +28,7 @@ gulp.task('lint', function () {
 		.pipe(jshint.reporter('fail'));
 });
 
-gulp.task('useref', function () {
+gulp.task('compile', function () {
 	return gulp.src('public/*.html')
 		.pipe(useref())
 		.pipe(gulpif('*.js', ngAnnotate()))
@@ -47,4 +47,4 @@ gulp.task('watch', function () {
 	return gulp.watch('public/src/**', ['useref'])
 });
 
-gulp.task('build', ['clean', 'lint', 'useref']);
+gulp.task('build', ['clean', 'lint', 'compile']);
