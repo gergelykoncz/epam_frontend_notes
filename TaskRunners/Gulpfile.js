@@ -47,4 +47,4 @@ gulp.task('watch', function () {
 	return gulp.watch('public/src/**', ['useref'])
 });
 
-gulp.task('build', ['clean', 'lint', 'compile']);
+gulp.task('build', ['clean', 'lint', 'karma', 'compile']);

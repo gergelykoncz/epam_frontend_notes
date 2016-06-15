@@ -11,6 +11,7 @@ angular.module('PokeApp')
 			}
 			else {
 				var poke = JSON.parse(result);
+				/*jshint proto:true */
 				poke.__proto__ = Pokemon.prototype;
 				return poke;
 			}

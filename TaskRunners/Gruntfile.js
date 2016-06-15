@@ -73,4 +73,6 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('lint', ['jshint']);
 	grunt.registerTask('compile', ['ngAnnotate', 'uglify', 'cssmin', 'copy:html', 'useref']);
+
+	grunt.registerTask('build', ['clean', 'lint', 'karma', 'compile']);
 };
