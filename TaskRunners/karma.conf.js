@@ -1,13 +1,17 @@
 module.exports = function (config) {
 	config.set({
 		browsers: ['Chrome'],
-		frameworks: ['jasmine'],
+		frameworks: ['jasmine', 'requirejs'],
 		files: [
-			'public/vendor/jquery/dist/jquery.js',
-			'public/vendor/angular/angular.js',
-			'public/src/**/*.js',
+			'public/vendor/requirejs/require.js',
 
-			'public/test/**/*.spec.js'
-		]
+
+
+			{pattern: 'public/src/**/*.js', included: false},
+
+			'public/test/test-config.js',
+			{pattern: 'public/test/**/*.spec.js', included: false}
+		],
+		plugins: ['karma-requirejs', 'karma-chrome-launcher', 'karma-jasmine']
 	});
 };
