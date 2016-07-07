@@ -1,44 +1,37 @@
-angular.module('PokeApp')
-	.service('PokeSvc', function ($http, PokeCache) {
-		var nextUrl,
-			pendingHttp = false;
+define(['pokemon', 'pokeCache', 'jquery'], function(Pokemon, PokeCache, $){
+	var nextUrl,
+		pendingHttp = false;
 
-		function _listPokemon(data, cb) {
-			data.results.forEach(function (item) {
-				var cached = PokeCache.retrieve(item.url);
-				if (cached) {
-					cb(cached);
-				}
-				else {
-					$http({
-						method: 'GET',
-						url: item.url
-					}).success(function (result) {
-						var poke = new Pokemon(result);
-						PokeCache.add(item.url, poke);
-						cb(poke);
-					});
-				}
-			});
-		}
-
-		function _getPokemon(cb) {
-			if (pendingHttp) {
-				return;
+	function _listPokemon(data, cb) {
+		data.results.forEach(function (item) {
+			var cached = PokeCache.retrieve(item.url);
+			if (cached) {
+				cb(cached);
 			}
-			pendingHttp = true;
-			$http({
-				method: 'GET',
-				url: nextUrl || 'http://pokeapi.co/api/v2/pokemon?limit=20'
-			}).success(function (result) {
-				//Pagination support, the result will contain a new URL for the next batch
-				nextUrl = result.next;
-				_listPokemon(result, cb);
-				pendingHttp = false;
-			});
-		}
+			else {
+				$.getJSON(item.url, function(result){
+					var poke = new Pokemon(result);
+					PokeCache.add(item.url, poke);
+					cb(poke);
+				});
+			}
+		});
+	}
 
-		return {
-			getPokemon: _getPokemon
-		};
-	});
+	function _getPokemon(cb) {
+		if (pendingHttp) {
+			return;
+		}
+		pendingHttp = true;
+		$.getJSON(nextUrl || 'http://pokeapi.co/api/v2/pokemon?limit=20', function(result){
+			//Pagination support, the result will contain a new URL for the next batch
+			nextUrl = result.next;
+			_listPokemon(result, cb);
+			pendingHttp = false;
+		});
+	}
+
+	return {
+		getPokemon: _getPokemon
+	};
+});

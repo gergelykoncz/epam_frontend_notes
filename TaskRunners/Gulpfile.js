@@ -47,4 +47,16 @@ gulp.task('watch', function () {
 	return gulp.watch('public/src/**', ['useref'])
 });
 
+gulp.task('requirejsBuild', function() {
+	rjs({
+		baseUrl: 'path/to/your/base/file.js',
+		out: 'FILENAME\_TO\_BE\_OUTPUTTED',
+		shim: {
+			// standard require.js shim options
+		}
+		// ... more require.js options
+	})
+		.pipe(gulp.dest('public/dist/')); // pipe it to the output DIR
+});
+
 gulp.task('build', ['clean', 'lint', 'karma', 'compile']);

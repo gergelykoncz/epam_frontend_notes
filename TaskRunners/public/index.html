@@ -26,28 +26,10 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="poke in pokemon">
-            <td>#{{poke.id}} <img ng-src="{{poke.image}}" alt="{{poke.name}}"></td>
-            <td class="name">{{poke.name}}</td>
-            <td>{{poke.getTypes()}}</td>
-            <td class="moves">{{poke.getMoves()}}</td>
-        </tr>
         </tbody>
     </table>
 </div>
 
-<!-- build:js js/vendor.js-->
-<script type="text/javascript" src="vendor/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="vendor/angular/angular.js"></script>
-<!-- endbuild -->
-
-<!-- build:js js/dist.js-->
-<script type="text/javascript" src="src/js/pokemon.js"></script>
-<script type="text/javascript" src="src/js/pokeApp.js"></script>
-<script type="text/javascript" src="src/js/pokeCache.js"></script>
-<script type="text/javascript" src="src/js/pokeService.js"></script>
-<script type="text/javascript" src="src/js/pokeController.js"></script>
-<script type="text/javascript" src="src/js/windowScroll.js"></script>
-<!-- endbuild -->
+<script data-main="src/js/require-config" src="vendor/requirejs/require.js"></script>
 </body>
 </html>
