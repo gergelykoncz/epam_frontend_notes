@@ -4,13 +4,13 @@ angular.module('PokeApp')
 			pokemon: []
 		});
 
-		$scope.$on('PokeApp.Scroll', _fetchPokemon);
+		$scope.$on('PokeApp.Scroll', $scope.fetchPokemon );
 
-		function _fetchPokemon() {
+		$scope.fetchPokemon = function() {
 			PokeSvc.getPokemon(function (result) {
 				$scope.pokemon.push(result);
 			});
-		}
+		};
 
-		_fetchPokemon();
+        $scope.fetchPokemon();
 	});

@@ -44,10 +44,14 @@ describe('Pokemon class tests', function () {
 
 	describe('getMoves prototype function', function () {
 		it('should return comma-delimited list of moves', function () {
+			//ARRANGE
 			var balbasaur = new Pokemon(rawData);
-			expect(balbasaur.getMoves()).toEqual('cut, leer');
+			//ACT
+			var result = balbasaur.getMoves();
+			//ASSERT
+			expect(result).toEqual('cut, leer');
 		});
-	});
+});
 
 	describe('getType prototype function', function () {
 		it('should return comma-delimited list of types', function () {
