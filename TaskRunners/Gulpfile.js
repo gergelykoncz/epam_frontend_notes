@@ -21,18 +21,18 @@ gulp.task('clean', function (done) {
 	done();
 });
 
-gulp.task('lint', function () {
+gulp.task('hint', function () {
 	return gulp.src(['public/src/js/**'])
-		.pipe(jshint())
+		.pipe(tslint())
 		.pipe(jshint.reporter(jshintStylish, {verbose: true}))
 		.pipe(jshint.reporter('fail'));
 });
 
-gulp.task('compile', function () {
+gulp.task('compiler', function () {
 	return gulp.src('public/*.html')
 		.pipe(useref())
 		.pipe(gulpif('*.js', ngAnnotate()))
-		.pipe(gulpif('*.js', uglify()))
+		.pipe(gulpif('*.ts', uglify()))
 		.pipe(gulp.dest('public/dist'));
 });
 
