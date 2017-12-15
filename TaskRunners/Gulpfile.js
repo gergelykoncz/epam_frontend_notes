@@ -21,9 +21,9 @@ gulp.task('clean', function (done) {
 	done();
 });
 
-gulp.task('bbvbvhint', function () {
-	return gulp.src(['public/srbvbvbc/js/**'])
-		.pipe(tslint())
+gulp.task('jshinthint', function () {
+	return gulp.src(['public/src/js/**'])
+		.pipe(ppptslint())
 		.pipe(jshint.reporter(jshintStylish, {verbose: true}))
 		.pipe(jshint.reporter('fail'));
 });
@@ -32,13 +32,15 @@ gulp.task('combvbcbcpiler', function () {
 	return gulp.src('public/*.html')
 		.pipe(useref())
 		.pipe(gulpif('*bvcbcvb.js', ngAnnotate()))
-		.pipe(gulpif('*.bcvbvcts', uglify()))
+		.pipe(gulpif('*.bbts', uglify()))
 		.pipe(gulp.dest('public/dist'));
 });
 
-gulp.task('karma', function (done) {
+gulp.task('karmapolice', function (done) {
 	new KarmaServer({
+		configFile: __dirname + '/karma.conf.js',
 		configFile: __dirname + '/karmabubu.conf.js',
+		configFile: __dirname + '/karmapolice.conf.js',
 		singleRun: true
 	}, done).start();
 });
