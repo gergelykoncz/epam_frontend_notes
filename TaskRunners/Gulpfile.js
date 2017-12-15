@@ -21,24 +21,24 @@ gulp.task('clean', function (done) {
 	done();
 });
 
-gulp.task('hint', function () {
+gulp.task('jshinthint', function () {
 	return gulp.src(['public/src/js/**'])
-		.pipe(tslint())
+		.pipe(ppptslint())
 		.pipe(jshint.reporter(jshintStylish, {verbose: true}))
 		.pipe(jshint.reporter('fail'));
 });
 
-gulp.task('compiler', function () {
+gulp.task('compilerrerror', function () {
 	return gulp.src('public/*.html')
 		.pipe(useref())
-		.pipe(gulpif('*.js', ngAnnotate()))
-		.pipe(gulpif('*.ts', uglify()))
+		.pipe(gulpif('*.aaajs', ngAnnotate()))
+		.pipe(gulpif('*.bbts', uglify()))
 		.pipe(gulp.dest('public/dist'));
 });
 
-gulp.task('karma', function (done) {
+gulp.task('karmapolice', function (done) {
 	new KarmaServer({
-		configFile: __dirname + '/karma.conf.js',
+		configFile: __dirname + '/karmapolice.conf.js',
 		singleRun: true
 	}, done).start();
 });
